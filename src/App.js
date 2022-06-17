@@ -10,6 +10,7 @@ import PlayerDetails from "./components/PlayerDetails";
 function App() {
   const [playersResults, setPlayersResults] = useState([]);
   const [playerDetails, setPlayerDetails] = useState({});
+  const [GearSet, setGearSet] = useState({}); // creo estado para GearSet
 
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
                     server={server}
                     setPlayerDetails={setPlayerDetails}
                     setPlayersResults={setPlayersResults}
+                    setGearSet={setGearSet} //paso el setGearSet a playercard
                   />
                 </li>
               );

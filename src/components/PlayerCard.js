@@ -5,6 +5,7 @@ const PlayerCard = ({
   server,
   setPlayerDetails,
   setPlayersResults,
+  setGearSet,
   //Recibimos los datos del searchform y también el setPlayerDetails y setPlaterResults
   //para poder cambiar los estados desde aquí.
 }) => {
@@ -17,6 +18,10 @@ const PlayerCard = ({
         //para poder pasarle un id y hacer una llamada a la api y recibir más datos
 
       if (res.ok) {
+
+        console.log(body) //prueba para ver lo que manda.
+
+        /*-------------------- datos del character ----------------------- */
         const {
           Name: playerName,
           Avatar: avatar,
@@ -24,7 +29,7 @@ const PlayerCard = ({
           FreeCompanyName: companyName,
         } = body.Character;
 
-        console.log(body) //prueba para ver lo que manda.
+       
 
         const classJobsAboveLvl0 = classJobs.filter((classJob) => {
           return classJob.Level > 0;
@@ -36,6 +41,8 @@ const PlayerCard = ({
           avatar,
           classJobs: classJobsAboveLvl0,
           companyName,
+          body,
+          setGearSet,//le paso el gearset y el body a playerdatils para tenerlo accesible
         });//pasamos los datos al estado details y vaciamos el results
         setPlayersResults([]);
       }
