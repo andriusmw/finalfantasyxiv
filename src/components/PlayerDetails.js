@@ -57,10 +57,10 @@ const PlayerDetails = ({ data }) => {
               <p>ExpLvl: {expLvl}</p>
               <article>
                 <p>GearSet</p>
-            
+                <p>{body.Character.GearSet.Attributes} </p>
                 <p>{body.Character.GearSet.ClassID} </p>
                 <p>{body.Character.GearSet.Gear} </p>
-           
+                <p>{body.Character.GearSet.GearKey} </p>
                 <p>{body.Character.GearSet.JobID} </p>
                 <p>{body.Character.GearSet.Level} </p>
 
