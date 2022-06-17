@@ -14,7 +14,7 @@ const PlayerDetails = ({ data }) => {
             body,
             setGearSet
           
-          ]);//pasamos los datos al estado details y vaciamos el results
+          ]);//pasamos los datos al estado gearset y vaciamos el results
           setGearSet([]);
           
           
