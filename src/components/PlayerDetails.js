@@ -6,7 +6,10 @@ const PlayerDetails = ({ data }) => {
 
  
           /*-------------------- pasar datos a gearset -----*/
-          //hacer asyncrona la llamada
+          //hacer asyncrona la llamada como en player card
+          //que aparezca un boton para cargar el equipo y ahí 
+          //hago el setgearset y ya luego ver como muestra los datos
+          //igual hay que hacer un list en GearSet.js
           setGearSet([
             body,
             setGearSet
