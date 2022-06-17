@@ -16,6 +16,7 @@ function App() {
       <Header />
       <main>
         <SearchForm setPlayersResults={setPlayersResults} />
+        
 
         {playersResults.length > 0 && (
           <List
