@@ -44,7 +44,14 @@ function App() {
 
         {Object.keys(playerDetails).length > 0 && (
           <PlayerDetails data={playerDetails} />
+          
+         
+        )};
+         {Object.keys(GearSet).length > 0 && (
+          <GearSet data={GearSet} ></GearSet>
+         
         )}
+
       </main>
       <Footer />
     </>
